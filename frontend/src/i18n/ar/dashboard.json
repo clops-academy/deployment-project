@@ -1,0 +1,37 @@
+{
+  "title": "لوحة تحكم الرئيس التنفيذي",
+  "todaySnapshot": "لمحة اليوم",
+  "kpi": {
+    "occupancy": "نسبة الإشغال",
+    "revenue": "الإيرادات",
+    "adr": "متوسط سعر الغرفة",
+    "revpar": "إيراد الغرفة المتاحة",
+    "checkIns": "تسجيل الوصول",
+    "checkOuts": "تسجيل المغادرة",
+    "bookings": "الحجوزات",
+    "available": "الغرف المتاحة",
+    "pendingArrivals": "الوصول المعلق",
+    "totalGuests": "إجمالي الضيوف",
+    "employees": "الموظفون",
+    "presentToday": "حاضرون اليوم",
+    "onLeave": "في إجازة",
+    "absent": "غائبون",
+    "maintenanceTickets": "تذاكر مفتوحة",
+    "cancellationRate": "معدل الإلغاء"
+  },
+  "charts": {
+    "revenueTrend": "اتجاه الإيرادات",
+    "occupancyTrend": "اتجاه الإشغال",
+    "bookingSources": "مصادر الحجز",
+    "revenueByType": "الإيرادات حسب نوع الغرفة",
+    "revenueByDepartment": "الإيرادات حسب القسم"
+  },
+  "periods": {
+    "today": "اليوم",
+    "thisWeek": "هذا الأسبوع",
+    "thisMonth": "هذا الشهر",
+    "thisQuarter": "هذا الربع",
+    "thisYear": "هذا العام",
+    "custom": "مخصص"
+  }
+}

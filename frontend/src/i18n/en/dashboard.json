@@ -1,0 +1,37 @@
+{
+  "title": "CEO Dashboard",
+  "todaySnapshot": "Today's Snapshot",
+  "kpi": {
+    "occupancy": "Occupancy",
+    "revenue": "Revenue",
+    "adr": "ADR",
+    "revpar": "RevPAR",
+    "checkIns": "Check-ins",
+    "checkOuts": "Check-outs",
+    "bookings": "Bookings",
+    "available": "Available Rooms",
+    "pendingArrivals": "Pending Arrivals",
+    "totalGuests": "Total Guests",
+    "employees": "Employees",
+    "presentToday": "Present Today",
+    "onLeave": "On Leave",
+    "absent": "Absent",
+    "maintenanceTickets": "Open Tickets",
+    "cancellationRate": "Cancellation Rate"
+  },
+  "charts": {
+    "revenueTrend": "Revenue Trend",
+    "occupancyTrend": "Occupancy Trend",
+    "bookingSources": "Booking Sources",
+    "revenueByType": "Revenue by Room Type",
+    "revenueByDepartment": "Revenue by Department"
+  },
+  "periods": {
+    "today": "Today",
+    "thisWeek": "This Week",
+    "thisMonth": "This Month",
+    "thisQuarter": "This Quarter",
+    "thisYear": "This Year",
+    "custom": "Custom"
+  }
+}
