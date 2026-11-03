@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter, Navigate } from 'react-router-dom'
 import { DashboardLayout } from '@/components/layout/dashboard-layout'
 import { CEODashboard } from '@/features/dashboard/pages/CEODashboard'
 import { FrontDeskPage } from '@/features/front-desk/pages/FrontDeskPage'
@@ -20,6 +20,14 @@ import { SignUpPage } from '@/features/auth/pages/SignUpPage'
 import { VerificationPage } from '@/features/auth/pages/VerificationPage'
 import { GuestPortalPage } from '@/features/guest-portal/pages/GuestPortalPage'
 
+function AuthGuard({ children }: { children: React.ReactNode }) {
+  const isAuth = typeof window !== 'undefined' && localStorage.getItem('cognivex_logged_in') === 'true'
+  if (!isAuth) {
+    return <Navigate to="/login" replace />
+  }
+  return <>{children}</>
+}
+
 export const router = createBrowserRouter([
   {
     path: '/login',
@@ -39,7 +47,11 @@ export const router = createBrowserRouter([
   },
   {
     path: '/',
-    element: <DashboardLayout />,
+    element: (
+      <AuthGuard>
+        <DashboardLayout />
+      </AuthGuard>
+    ),
     children: [
       { index: true, element: <CEODashboard /> },
       { path: 'front-desk', element: <FrontDeskPage /> },

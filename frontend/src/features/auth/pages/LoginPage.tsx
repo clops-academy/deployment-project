@@ -54,6 +54,7 @@ export function LoginPage() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
+      localStorage.setItem('cognivex_logged_in', 'true')
       navigate('/')
     }, 700)
   }

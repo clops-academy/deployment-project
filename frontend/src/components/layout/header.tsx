@@ -190,7 +190,10 @@ export function Header({
               <DropdownMenu.Separator className="my-1 h-px bg-gray-100" />
               <DropdownMenu.Item
                 className="flex items-center gap-2 rounded-lg px-3 py-2 text-rose-600 hover:bg-rose-50 cursor-pointer outline-none"
-                onClick={() => navigate('/login')}
+                onClick={() => {
+                  localStorage.removeItem('cognivex_logged_in')
+                  navigate('/login')
+                }}
               >
                 <LogOut className="h-3.5 w-3.5" />
                 <span>Lock Station &amp; Sign Out</span>

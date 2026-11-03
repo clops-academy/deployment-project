@@ -103,6 +103,7 @@ export function VerificationPage() {
     setTimeout(() => {
       setLoading(false)
       setVerified(true)
+      localStorage.setItem('cognivex_logged_in', 'true')
       setTimeout(() => {
         navigate('/')
       }, 1200)
